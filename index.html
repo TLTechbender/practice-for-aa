@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Debugging HTML Practice
+      <title>Debugging HTML Practice</title> <!--first bug found, the opening title tag was not followed by it's corresponding closing tag-->
+
   </head>
   <body>
     <div class='profile'>
-        <h6>Profile Name</h6>
+        <h1>Profile Name</h1> <!-- second bug found, The beginning did not contain a "h1" tag but I've taken care of that-->
         <div class='address'>Address</div>
 
         <div class='contact'>
@@ -16,15 +17,15 @@
         </div>
 
         <div class='categories'>
-          <h2>Categories</h2>
-          <li>
-            <ul>Lorem ipsum</ul>
-            <ul>dolor sit</ul>
-            <ul>amet</ul>
-            <ul>dolor sit</ul>
-          </li>
-        </div>
-
+          <h2>Categories</h2> </div>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>dolor sit</li>
+            <li>amet</li>
+            <li>dolor sit</li>
+          </ul>
+        
+          <!--Third bug found, the above list has misplaced syntax, "ul" was found in the place of "li" and vice versa-->
       </div>
 
       <div id='biography'>
@@ -36,8 +37,18 @@
           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.
-        </p>
-        <p>
+ </p>
+       
+ <p>                        <center>  <h6><FONT COLOR=red>Text</FONT></h6>  </center> 
+
+ </p>
+ <!--Hmmm, lemme actually see the number of bugs that I found in this area,
+ 1. Fourth bug, the text element "text wasn't present in the first place"
+ 2. Fifth bug, the text element didn't have the correct heading which was 'h6'
+ 3. Sixth bug, the text element wasn't  centered on the screen
+ 4. Seventh bug, the text element didn't have the specified color. -->
+
+ <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -52,7 +63,9 @@
 
         <div class='footer-3-wide'>
           <ul>
-            <ol>
+              <li>
+              <!-- Eight bug found, there is an unecessary "ol" tag at the beginning of this unordered list-->
+              <!-- Nineth bug found, in the place of the unecessary "ol" tag, there was supposed to be an "li" tag -->
               <a href='https://www.example.com/' target='_blank'>
                 Lorem ipsum dolor sit amet
               </a>
